@@ -24,11 +24,14 @@ const resultadomult = numero1 * numero2 * numero3
 const resultadodivis = (numero1 / numero2) / numero3
 
 
-// saida
+// saida - email
 console.log("Resultado soma: " + resultadosoma)
 console.log("Resultado subtração: " + resultadosubtracao)
 console.log("Resultado multiplicação: " + resultadomult)
 console.log("Resultado divisão: " + resultadodivis)
+
+// feedback - parcial - final - tecnico
+console.log("enviado por e-mail ao usuario")
 
 
 // escovar bits
