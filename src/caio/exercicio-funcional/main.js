@@ -2,14 +2,25 @@ const contador = 10;
 
 for(let i=1; i <= contador; i++) {
     console.log(`número da contagem: ${i}`)
+
+    if (i % 2 == 1) {
+        console.log ("O número é ímpar!")
+    }
+
+    else if (i % 2 == 0) {
+        console.log ("O número é par!")
+    }
+
+
 }
+
 
 //-------------------------------------------
 
 
-const cestaFrutas = []
+const readlineSync = require('readline-sync');
 
-// adicionarFruta(fruta)
+const cestaFrutas = []
 
 cestaFrutas.push('🍎')
 cestaFrutas.push('🍌')
@@ -19,9 +30,34 @@ cestaFrutas.push('🍒')
 cestaFrutas.push('🍊')
 cestaFrutas.push('🍇')
 
-// printarCestaFrustas(cestaFrutas)
-
 console.log(`Cesta de Frutas ${cestaFrutas.join(" ")}`)
+
+var fruta = readlineSync.question("Insira um emoji da cesta de frutas:");
+
+if (fruta == "🍎") {
+    console.log ("Isso é uma maçã!")
+}
+else if (fruta == "🍌") {
+    console.log ("Isso é uma banana!")
+}
+else if (fruta == "🍉") {
+    console.log ("Isso é uma melancia!")
+}
+else if (fruta == "🍐") {
+    console.log ("Isso é uma pera!")
+}
+else if (fruta == "🍒") {
+    console.log ("Isso é uma cereja!")
+}
+else if (fruta == "🍊") {
+    console.log ("Isso é uma laranja!")
+}
+else if (fruta == "🍇") {
+    console.log ("Isso é um cacho de uvas!")
+}
+else {
+    console.log ("Fruta inválida!")
+}
 
 
 //-------------------------------------------
@@ -32,7 +68,6 @@ const resultadoConcurso2021 = 500
 const resultadoConcurso2022 = 300
 const resultadoConcurso2023 = 900
 const resultadoConcurso2024 = 100
-
 
 const classificacaoFaseA = [1000, 700]
 const classificacaoFaseB = [600, 500]
