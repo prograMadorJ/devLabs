@@ -1,13 +1,20 @@
-const contador = 10;
+/*const contador = 10;
 
 for(let i=1; i <= contador; i++) {
     console.log(`número da contagem: ${i}`)
-}
+}*/
+const contador = 15;
 
+function iniciarContador() {
+    for (let i=1; i <= contador; i++) {
+    console.log(`número da contagem: ${i}`)
+    }
+};
+iniciarContador();
 //-------------------------------------------
 
 
-const cestaFrutas = []
+/*const cestaFrutas = []
 
 // adicionarFruta(fruta)
 
@@ -17,17 +24,31 @@ cestaFrutas.push('🍉')
 cestaFrutas.push('🍐')
 cestaFrutas.push('🍒')
 cestaFrutas.push('🍊')
-cestaFrutas.push('🍇')
+cestaFrutas.push('🍇')*/
+
+const cestaFrutas = ['🍎', '🍌', '🍉', '🍐', '🍒', '🍊', '🍇'];
+
+function adicionarFruta(fruta) {
+    cestaFrutas.push(fruta);
+    console.log(`Você adicionou ${fruta} a sua cesta.`);
+}
+
+adicionarFruta('🍎'); 
+adicionarFruta('🍌');
+adicionarFruta('🍉'); 
+adicionarFruta('🍐'); 
+adicionarFruta('🍒'); 
+adicionarFruta('🍊'); 
+adicionarFruta('🍇'); 
 
 // printarCestaFrustas(cestaFrutas)
-
 console.log(`Cesta de Frutas ${cestaFrutas.join(" ")}`)
 
 
 //-------------------------------------------
 
 
-const resultadoConcurso2020 = 800
+/*const resultadoConcurso2020 = 800
 const resultadoConcurso2021 = 500
 const resultadoConcurso2022 = 300
 const resultadoConcurso2023 = 900
@@ -39,15 +60,51 @@ const classificacaoFaseB = [600, 500]
 const classificacaoFaseC = [400, 300]
 const classificacaoFaseD = [200, 100]
 
-const textoClassificacao = "Classificado para a "
+const textoClassificacao = "Classificado para a "*/
 
+const resultConcurso2020 = 800;
+const resultConcurso2021 = 500;
+const resultConcurso2022 = 300;
+const resultConcurso2023 = 900;
+const resultConcurso2024 = 100;
+
+const classificacaoFaseA = [1000, 700];
+const classificacaoFaseB = [600, 500];
+const classificacaoFaseC = [400, 300];
+const classificacaoFaseD = [200, 100];
+
+const textoClassificacao = "Classificado para a "  
+
+function resultClassificacao(ano) {
+    let classificacao;
+
+    switch (ano) {
+        case 2020:
+            classificacao = notaProva >= resultConcurso2020 ? 'Fase A' : 'Fase B';
+            break
+        case 2021:
+            classificacao = notaProva >= resultConcurso2021  ? 'Fase B' : 'Fase C';
+            break
+        case 2022:
+            classificacao = notaProva >= resultConcurso2022 ? 'Fase C' : 'Fase D';
+            break
+        case 2023:
+            classificacao = notaProva >= resultConcurso2023 ? 'Fase D' : 'Eliminado';
+            break
+        case 2024:
+            classificacao = notaProva <= resultConcurso2024 ? 'Eliminado' : 'Ano não encontrado';
+        }
+
+        return classificacao;
+    }
+console.log(`${textoClassificacao} ${resultClassificacao (2021)}`);
 
 
 // cada if ser uma funcao
 
 // 2020 -----------------------------------------------------
 
-let [max, min] = classificacaoFaseA;
+/*let [max, min] = classificacaoFaseA;
 let ano = 2020
 if(resultadoConcurso2020 >= min && resultadoConcurso2020 <= max) {
     console.log(`${textoClassificacao} FaseA - ${ano}`)
@@ -162,4 +219,159 @@ if(resultadoConcurso2024 >= min && resultadoConcurso2024 <= max) {
 [max, min] = classificacaoFaseD;
 if(resultadoConcurso2024 >= min && resultadoConcurso2024 <= max) {
     console.log(`${textoClassificacao} FaseD - ${ano}`)
+}*/
+
+function verificarClassificacao2020() {
+    const maxClassificacao = Math.max(...classificacaoFaseA);
+    const minClassificacao = Math.min(...classificacaoFaseA);
+
+    if (resultConcurso2020 < maxClassificacao || resultConcurso2020 > minClassificacao) {
+        console.log(textoClassificacao + "Fase A");
+    } else {
+        console.log("Não classificado para a Fase A");
+    }
+
+    if (resultConcurso2020 < maxClassificacao || resultConcurso2020 > minClassificacao) {
+        console.log(textoClassificacao + "Fase B");
+    } else {
+        console.log("Não classificado para a Fase B");
+    }
+
+    if (resultConcurso2020 < maxClassificacao || resultConcurso2020 > minClassificacao) {
+        console.log(textoClassificacao + "Fase C");
+    } else {
+        console.log("Não classificado para a Fase C");
+    }
+
+    if (resultConcurso2020 < maxClassificacao || resultConcurso2020 > minClassificacao) {
+        console.log(textoClassificacao + "Fase D");
+    } else {
+        console.log("Não classificado para a Fase D");
+    }
 }
+
+verificarClassificacao2020();
+
+function verificarClassificacao2021() {
+    const maxClassificacao = Math.max(...classificacaoFaseA);
+    const minClassificacao = Math.min(...classificacaoFaseA);
+
+    if (resultConcurso2021 < maxClassificacao || resultConcurso2021 > minClassificacao) {
+        console.log(textoClassificacao + "Fase A");
+    } else {
+        console.log("Não classificado para a Fase A");
+    }
+
+    if (resultConcurso2021 < maxClassificacao || resultConcurso2021 > minClassificacao) {
+        console.log(textoClassificacao + "Fase B");
+    } else {
+        console.log("Não classificado para a Fase B");
+    }
+
+    if (resultConcurso2021 < maxClassificacao || resultConcurso2021 > minClassificacao) {
+        console.log(textoClassificacao + "Fase C");
+    } else {
+        console.log("Não classificado para a Fase C");
+    }
+
+    if (resultConcurso2021 < maxClassificacao || resultConcurso2021 > minClassificacao) {
+        console.log(textoClassificacao + "Fase D");
+    } else {
+        console.log("Não classificado para a Fase D");
+    }
+}
+
+verificarClassificacao2021();
+
+function verificarClassificacao2022() {
+    const maxClassificacao = Math.max(...classificacaoFaseA);
+    const minClassificacao = Math.min(...classificacaoFaseA);
+
+    if (resultConcurso2022 < maxClassificacao || resultConcurso2022 > minClassificacao) {
+        console.log(textoClassificacao + "Fase A");
+    } else {
+        console.log("Não classificado para a Fase A");
+    }
+
+    if (resultConcurso2022 < maxClassificacao || resultConcurso2022 > minClassificacao) {
+        console.log(textoClassificacao + "Fase B");
+    } else {
+        console.log("Não classificado para a Fase B");
+    }
+
+    if (resultConcurso2022 < maxClassificacao || resultConcurso2022 > minClassificacao) {
+        console.log(textoClassificacao + "Fase C");
+    } else {
+        console.log("Não classificado para a Fase C");
+    }
+
+    if (resultConcurso2022 < maxClassificacao || resultConcurso2022 > minClassificacao) {
+        console.log(textoClassificacao + "Fase D");
+    } else {
+        console.log("Não classificado para a Fase D");
+    }
+}
+
+verificarClassificacao2022();
+
+function verificarClassificacao2023() {
+    const maxClassificacao = Math.max(...classificacaoFaseA);
+    const minClassificacao = Math.min(...classificacaoFaseA);
+
+    if (resultConcurso2023 < maxClassificacao || resultConcurso2023 > minClassificacao) {
+        console.log(textoClassificacao + "Fase A");
+    } else {
+        console.log("Não classificado para a Fase A");
+    }
+
+    if (resultConcurso2023 < maxClassificacao || resultConcurso2023 > minClassificacao) {
+        console.log(textoClassificacao + "Fase B");
+    } else {
+        console.log("Não classificado para a Fase B");
+    }
+
+    if (resultConcurso2023 < maxClassificacao || resultConcurso2023 > minClassificacao) {
+        console.log(textoClassificacao + "Fase C");
+    } else {
+        console.log("Não classificado para a Fase C");
+    }
+
+    if (resultConcurso2023 < maxClassificacao || resultConcurso2023 > minClassificacao) {
+        console.log(textoClassificacao + "Fase D");
+    } else {
+        console.log("Não classificado para a Fase D");
+    }
+}
+
+verificarClassificacao2023();
+
+function verificarClassificacao2024() {
+    const maxClassificacao = Math.max(...classificacaoFaseA);
+    const minClassificacao = Math.min(...classificacaoFaseA);
+
+    if (resultConcurso2024 < maxClassificacao || resultConcurso2024 > minClassificacao) {
+        console.log(textoClassificacao + "Fase A");
+    } else {
+        console.log("Não classificado para a Fase A");
+    }
+
+    if (resultConcurso2024 < maxClassificacao || resultConcurso2024 > minClassificacao) {
+        console.log(textoClassificacao + "Fase B");
+    } else {
+        console.log("Não classificado para a Fase B");
+    }
+
+    if (resultConcurso2024 < maxClassificacao || resultConcurso2024 > minClassificacao) {
+        console.log(textoClassificacao + "Fase C");
+    } else {
+        console.log("Não classificado para a Fase C");
+    }
+
+    if (resultConcurso2024 < maxClassificacao || resultConcurso2024 > minClassificacao) {
+        console.log(textoClassificacao + "Fase D");
+    } else {
+        console.log("Não classificado para a Fase D");
+    }
+}
+
+verificarClassificacao2024();
