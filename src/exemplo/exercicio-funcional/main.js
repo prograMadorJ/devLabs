@@ -49,7 +49,7 @@ const textoClassificacao = "Classificado para a "
 
 let [max, min] = classificacaoFaseA;
 let ano = 2020
-if(resultadoConcurso2020 >= min && resultadoConcurso2020 <= max) {
+if(resultadoConcurso2020 <= max && resultadoConcurso2020 >= min) {
     console.log(`${textoClassificacao} FaseA - ${ano}`)
 } 
 
@@ -163,3 +163,4 @@ if(resultadoConcurso2024 >= min && resultadoConcurso2024 <= max) {
 if(resultadoConcurso2024 >= min && resultadoConcurso2024 <= max) {
     console.log(`${textoClassificacao} FaseD - ${ano}`)
 }
+

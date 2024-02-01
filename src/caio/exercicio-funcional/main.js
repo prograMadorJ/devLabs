@@ -1,5 +1,6 @@
 const contador = 10;
 
+function contandorVerificarParImpar() {
 for(let i=1; i <= contador; i++) {
     console.log(`número da contagem: ${i}`)
 
@@ -13,6 +14,9 @@ for(let i=1; i <= contador; i++) {
 
 
 }
+}
+
+contandorVerificarParImpar()
 
 
 //-------------------------------------------
@@ -84,11 +88,12 @@ const textoClassificacao = "Classificado para a "
 
 // cada if ser uma funcao
 
+
 // 2020 -----------------------------------------------------
 
 
-let ano = 2020
-function verificarClassificacao2020 () {
+function verificarClassificacao2020 (resultadoConcurso2020) {
+const ano = 2020
 if(resultadoConcurso2020 >= minimaFaseA && resultadoConcurso2020 <= maximaFaseA) {
     console.log(`${textoClassificacao} FaseA - ${ano}`)
 } 
@@ -106,10 +111,13 @@ if(resultadoConcurso2020 >= minimaFaseD && resultadoConcurso2020 <= maximaFaseD)
 }
 }
 
+
+
 // 2021 -----------------------------------------------------
 
-ano = 2021
+
 function verificarClassificacao2021 (resultadoConcurso2021) {
+const ano = 2021
 if(resultadoConcurso2021 >= minimaFaseA && resultadoConcurso2021 <= maximaFaseA) {
     console.log(`${textoClassificacao} FaseA - ${ano}`)
 } 
@@ -127,10 +135,13 @@ if(resultadoConcurso2021 >= minimaFaseD && resultadoConcurso2021 <= maximaFaseD)
 }
 }
 
+
+
 // 2022 -----------------------------------------------------
 
-ano = 2022
+
 function verificarClassificacao2022 (resultadoConcurso2022) {
+const ano = 2022
 if(resultadoConcurso2022 >= minimaFaseA && resultadoConcurso2022 <= maximaFaseA) {
     console.log(`${textoClassificacao} FaseA - ${ano}`)
 } 
@@ -150,8 +161,9 @@ if(resultadoConcurso2022 >= minimaFaseD && resultadoConcurso2022 <= maximaFaseD)
 
 // 2023 -----------------------------------------------------
 
-ano = 2023
+
 function verificarClassificacao2023 (resultadoConcurso2023) {
+const ano = 2023
 if(resultadoConcurso2023 >= minimaFaseA && resultadoConcurso2023 <= maximaFaseA) {
     console.log(`${textoClassificacao} FaseA - ${ano}`)
 } 
@@ -171,8 +183,9 @@ if(resultadoConcurso2023 >= minimaFaseD && resultadoConcurso2023 <= maximaFaseD)
 
 // 2024 -----------------------------------------------------
 
-ano = 2024
+
 function verificarClassificacao2024 (resultadoConcurso2024) {
+const ano = 2024
 if(resultadoConcurso2024 >= minimaFaseA && resultadoConcurso2024 <= maximaFaseA) {
     console.log(`${textoClassificacao} FaseA - ${ano}`)
 } 
@@ -190,4 +203,9 @@ if(resultadoConcurso2024 >= minimaFaseD && resultadoConcurso2024 <= maximaFaseD)
 }
 }
 
-function verificarClassificacao2020 (resultadoConcurso2020)
+
+verificarClassificacao2020 (resultadoConcurso2020) 
+verificarClassificacao2021 (resultadoConcurso2021) 
+verificarClassificacao2022 (resultadoConcurso2022) 
+verificarClassificacao2023 (resultadoConcurso2023) 
+verificarClassificacao2024 (resultadoConcurso2024) 
