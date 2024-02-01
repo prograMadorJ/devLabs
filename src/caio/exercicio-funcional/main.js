@@ -69,10 +69,14 @@ const resultadoConcurso2022 = 300
 const resultadoConcurso2023 = 900
 const resultadoConcurso2024 = 100
 
-const classificacaoFaseA = [1000, 700]
-const classificacaoFaseB = [600, 500]
-const classificacaoFaseC = [400, 300]
-const classificacaoFaseD = [200, 100]
+const maximaFaseA = 1000
+const minimaFaseA = 700
+const maximaFaseB = 699
+const minimaFaseB = 500
+const maximaFaseC = 499
+const minimaFaseC = 300
+const maximaFaseD = 299
+const minimaFaseD = 100
 
 const textoClassificacao = "Classificado para a "
 
@@ -82,119 +86,108 @@ const textoClassificacao = "Classificado para a "
 
 // 2020 -----------------------------------------------------
 
-let [max, min] = classificacaoFaseA;
+
 let ano = 2020
-if(resultadoConcurso2020 >= min && resultadoConcurso2020 <= max) {
+function verificarClassificacao2020 () {
+if(resultadoConcurso2020 >= minimaFaseA && resultadoConcurso2020 <= maximaFaseA) {
     console.log(`${textoClassificacao} FaseA - ${ano}`)
 } 
 
-[max, min] = classificacaoFaseB;
-if(resultadoConcurso2020 >= min && resultadoConcurso2020 <= max) {
+if(resultadoConcurso2020 >= minimaFaseB && resultadoConcurso2020 <= maximaFaseB) {
     console.log(`${textoClassificacao} FaseB - ${ano}`)
 } 
 
-[max, min] = classificacaoFaseC;
- if(resultadoConcurso2020 >= min && resultadoConcurso2020 <= max) {
+ if(resultadoConcurso2020 >= minimaFaseC && resultadoConcurso2020 <= maximaFaseC) {
     console.log(`${textoClassificacao} FaseC - ${ano}`)
 } 
 
-[max, min] = classificacaoFaseD;
-if(resultadoConcurso2020 >= min && resultadoConcurso2020 <= max) {
+if(resultadoConcurso2020 >= minimaFaseD && resultadoConcurso2020 <= maximaFaseD) {
     console.log(`${textoClassificacao} FaseD - ${ano}`)
 }
-
+}
 
 // 2021 -----------------------------------------------------
 
-[max, min] = classificacaoFaseA;
 ano = 2021
-if(resultadoConcurso2021 >= min && resultadoConcurso2021 <= max) {
+function verificarClassificacao2021 (resultadoConcurso2021) {
+if(resultadoConcurso2021 >= minimaFaseA && resultadoConcurso2021 <= maximaFaseA) {
     console.log(`${textoClassificacao} FaseA - ${ano}`)
 } 
 
-[max, min] = classificacaoFaseB;
-if(resultadoConcurso2021 >= min && resultadoConcurso2021 <= max) {
+if(resultadoConcurso2021 >= minimaFaseB && resultadoConcurso2021 <= maximaFaseB) {
     console.log(`${textoClassificacao} FaseB - ${ano}`)
 } 
 
-[max, min] = classificacaoFaseC;
- if(resultadoConcurso2021 >= min && resultadoConcurso2021 <= max) {
+ if(resultadoConcurso2021 >= minimaFaseC && resultadoConcurso2021 <= maximaFaseC) {
     console.log(`${textoClassificacao} FaseC - ${ano}`)
 } 
 
-[max, min] = classificacaoFaseD;
-if(resultadoConcurso2021 >= min && resultadoConcurso2021 <= max) {
+if(resultadoConcurso2021 >= minimaFaseD && resultadoConcurso2021 <= maximaFaseD) {
     console.log(`${textoClassificacao} FaseD - ${ano}`)
 }
-
+}
 
 // 2022 -----------------------------------------------------
 
-[max, min] = classificacaoFaseA;
 ano = 2022
-if(resultadoConcurso2022 >= min && resultadoConcurso2022 <= max) {
+function verificarClassificacao2022 (resultadoConcurso2022) {
+if(resultadoConcurso2022 >= minimaFaseA && resultadoConcurso2022 <= maximaFaseA) {
     console.log(`${textoClassificacao} FaseA - ${ano}`)
 } 
 
-[max, min] = classificacaoFaseB;
-if(resultadoConcurso2022 >= min && resultadoConcurso2022 <= max) {
+if(resultadoConcurso2022 >= minimaFaseB && resultadoConcurso2022 <= maximaFaseB) {
     console.log(`${textoClassificacao} FaseB - ${ano}`)
 } 
 
-[max, min] = classificacaoFaseC;
- if(resultadoConcurso2022 >= min && resultadoConcurso2022 <= max) {
+ if(resultadoConcurso2022 >= minimaFaseC && resultadoConcurso2022 <= maximaFaseC) {
     console.log(`${textoClassificacao} FaseC - ${ano}`)
 } 
 
-[max, min] = classificacaoFaseD;
-if(resultadoConcurso2022 >= min && resultadoConcurso2022 <= max) {
+if(resultadoConcurso2022 >= minimaFaseD && resultadoConcurso2022 <= maximaFaseD) {
     console.log(`${textoClassificacao} FaseD - ${ano}`)
 }
-
+}
 
 // 2023 -----------------------------------------------------
 
-[max, min] = classificacaoFaseA;
 ano = 2023
-if(resultadoConcurso2023 >= min && resultadoConcurso2023 <= max) {
+function verificarClassificacao2023 (resultadoConcurso2023) {
+if(resultadoConcurso2023 >= minimaFaseA && resultadoConcurso2023 <= maximaFaseA) {
     console.log(`${textoClassificacao} FaseA - ${ano}`)
 } 
 
-[max, min] = classificacaoFaseB;
-if(resultadoConcurso2023 >= min && resultadoConcurso2023 <= max) {
+if(resultadoConcurso2023 >= minimaFaseB && resultadoConcurso2023 <= maximaFaseB) {
     console.log(`${textoClassificacao} FaseB - ${ano}`)
 } 
 
-[max, min] = classificacaoFaseC;
- if(resultadoConcurso2023 >= min && resultadoConcurso2023 <= max) {
+ if(resultadoConcurso2023 >= minimaFaseC && resultadoConcurso2023 <= maximaFaseC) {
     console.log(`${textoClassificacao} FaseC - ${ano}`)
 } 
 
-[max, min] = classificacaoFaseD;
-if(resultadoConcurso2023 >= min && resultadoConcurso2023 <= max) {
+if(resultadoConcurso2023 >= minimaFaseD && resultadoConcurso2023 <= maximaFaseD) {
     console.log(`${textoClassificacao} FaseD - ${ano}`)
 }
-
+}
 
 // 2024 -----------------------------------------------------
 
-[max, min] = classificacaoFaseA;
 ano = 2024
-if(resultadoConcurso2024 >= min && resultadoConcurso2024 <= max) {
+function verificarClassificacao2024 (resultadoConcurso2024) {
+if(resultadoConcurso2024 >= minimaFaseA && resultadoConcurso2024 <= maximaFaseA) {
     console.log(`${textoClassificacao} FaseA - ${ano}`)
 } 
 
-[max, min] = classificacaoFaseB;
-if(resultadoConcurso2024 >= min && resultadoConcurso2024 <= max) {
+if(resultadoConcurso2024 >= minimaFaseB && resultadoConcurso2024 <= maximaFaseB) {
     console.log(`${textoClassificacao} FaseB - ${ano}`)
 } 
 
-[max, min] = classificacaoFaseC;
- if(resultadoConcurso2024 >= min && resultadoConcurso2024 <= max) {
+ if(resultadoConcurso2024 >= minimaFaseC && resultadoConcurso2024 <= maximaFaseC) {
     console.log(`${textoClassificacao} FaseC - ${ano}`)
 } 
 
-[max, min] = classificacaoFaseD;
-if(resultadoConcurso2024 >= min && resultadoConcurso2024 <= max) {
+if(resultadoConcurso2024 >= minimaFaseD && resultadoConcurso2024 <= maximaFaseD) {
     console.log(`${textoClassificacao} FaseD - ${ano}`)
 }
+}
+
+function verificarClassificacao2020 (resultadoConcurso2020)
