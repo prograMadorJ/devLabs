@@ -73,7 +73,8 @@ const classificacaoFaseB = [600, 500];
 const classificacaoFaseC = [400, 300];
 const classificacaoFaseD = [200, 100];
 
-const textoClassificacao = "Classificado para a "  
+const textoClassificacao = "Classificado para a " 
+const notaProva = 700 
 
 function resultClassificacao(ano, notaProva) {
     let classificacao;
