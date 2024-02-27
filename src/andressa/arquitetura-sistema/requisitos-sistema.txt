@@ -1,0 +1,10 @@
+Ah eu gostaria de que o sistema tivesse um cadastro de alunos pra eu poder controlar as notas, exercicos...
+
+
+
+
+- Cadastro de alunos
+   dados: nome, telefone, whatsapp... nome dos pais
+ - controle de notas
+    notas bimestrais, exercios pontos, provas...
+

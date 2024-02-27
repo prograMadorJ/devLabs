@@ -1,30 +1,30 @@
 
-let PremioLoteria = 1000
-let valorDoRoubo = 100
+// let PremioLoteria = 1000
+// let valorDoRoubo = 100
 
 
-console.log("Antes", PremioLoteria)
+// console.log("Antes", PremioLoteria)
 
 
-function calcularPrejuizoDoRoubo(valor, roubo) {
-    return valor - roubo
-}
+// function calculandoPrejuizoDoRoubo(valor, roubo) {
+//     return valor - roubo
+// }
 
 
-const resultadoCalc = calcularPrejuizoDoRoubo(PremioLoteria, 100) 
+// const resultadoCalc = calcularPrejuizoDoRoubo(PremioLoteria, 100) 
 
-console.log("Depois", resultadoCalc)
+// console.log("Depois", resultadoCalc)
 
 
 
 // Exercicio 1 - Conta Bancaria Caixa Eletronico
 
-let saldoContaCorrente = 1000
-let nomeCliente = "Cliente Fulano"
-let dataDeposito = ""
-let dataSaque = ""
-let operacao = ""
-const numeroContaCorrente = 1233450
+// let saldoContaCorrente = 1000
+// let nomeCliente = "Cliente Fulano"
+// let dataDeposito = ""
+// let dataSaque = ""
+// let operacao = ""
+// const numeroContaCorrente = 1233450
 
 
 
@@ -66,18 +66,18 @@ const numeroContaCorrente = 1233450
 // console.log(saldoContaCorrente)
 
 
-function depositar(nome, operacao, valorDeposito, saldo, numConta) {
+// function depositar(nome, operacao, valorDeposito, saldo, numConta) {
 
-    console.log({numConta,nome,operacao,valorDeposito})
+//     console.log({numConta,nome,operacao,valorDeposito})
 
-    return saldo + valorDeposito
-}
-
-
-saldoContaCorrente = depositar("Fulano", "DEP", 100, saldoContaCorrente, numeroContaCorrente)
+//     return saldo + valorDeposito
+// }
 
 
-console.log(saldoContaCorrente)
+// saldoContaCorrente = depositar("Fulano", "DEP", 100, saldoContaCorrente, numeroContaCorrente)
+
+
+// console.log(saldoContaCorrente)
 
 // // operacao de deposito
 // saldo = saldo + 200
@@ -120,6 +120,31 @@ console.log(saldoContaCorrente)
 // `)
 
 
+function funcao1() {
+    return 1
+}
 
+
+function funcao2() {
+    return 2
+}
+
+
+function funcao3() {
+    return 0
+}
+
+const resultado = funcao1() + funcao2() / funcao3();
+
+
+console.log(`Frutas: ${resultado}`);
+
+// Arquitetura
+
+//
+
+// Engenharia
+
+// Controle de Alunos
 
 
