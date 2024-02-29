@@ -1,10 +1,4 @@
-Ah eu gostaria de que o sistema tivesse um cadastro de alunos pra eu poder controlar as notas, exercicos...
+Sistema de cadastro de medicamentos com estoque
 
-
-
-
-- Cadastro de alunos
-   dados: nome, telefone, whatsapp... nome dos pais
- - controle de notas
-    notas bimestrais, exercios pontos, provas...
-
+Cadastro do medicamento (nome, código, validade, preço, preço com desconto, descrição do medicamento, laboratório, nome genérico)
+Controle de estoque e alerta de baixo estoque 
