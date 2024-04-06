@@ -1,0 +1,4 @@
+Sistema de Controle de medicamentos (Escopo) (Produto) outras pessoas interessadas
+
+Cadastro do medicamento (nome, código, validade, preço, preço com desconto, fornecedor, peso/gramas, quantidade, descrição do medicamento, laboratório, nome genérico)
+Controle de estoque e alerta de baixo estoque

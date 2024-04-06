@@ -1,4 +1,0 @@
-Sistema de cadastro de medicamentos com estoque
-
-Cadastro do medicamento (nome, código, validade, preço, preço com desconto, descrição do medicamento, laboratório, nome genérico)
-Controle de estoque e alerta de baixo estoque 

@@ -1,0 +1,32 @@
+Sistema de Controle de Alunos (Escopo)
+
+Programa que cadastra os alunos com 
+01) Nome
+02) Faixa = Branca, cinza, azul, amarela, laranja, verde, roxa, marrom, preta, coral, vermelha
+03) Responsável (Alunos são menores idade [de criança até adolecente]) Obs: pode der adultos em algum momento
+04) Data do último exame de faixa
+04) CEP
+05) Informações de cadastro e idade
+
+Deve existir uma parte de financeiro onde terão informações de mensalidade, data de vencimento de cada mês
+
+Feature
+02.1 - Pode ser necessário ter um castro de faixa
+
+
+Mini-Escopo
+
+cadastro
+ - Alunos
+ - Faixas
+ - Financeiro
+
+relatorios
+ - Alunos mensal
+ - Faixas
+ - Financeiro Faturamento / mes/ semana / dia
+
+ classe Aluno {
+    String nome;
+    int idade;
+ }
