@@ -220,3 +220,40 @@ try {
 } catch(err) {
   console.log(err)
 }
+
+
+// Regras de Negocio
+
+class CampanhaVendas {
+   vender() {
+
+   }
+
+}
+
+class Relatorio {
+   gerarSemanal() {
+      
+   }
+
+   gerarAnual() {
+      
+   }
+
+   gerarMensal() {
+
+   }
+}
+
+
+
+class Financeiro {
+   registrarMensalidade() {
+      // enviarMensagem()
+   }
+
+   consultarMensalidades() {
+      // pagos
+      // nao pagos tempo de atrasados
+   }
+}
