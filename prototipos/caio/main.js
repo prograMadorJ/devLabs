@@ -114,7 +114,9 @@ class ValidarDadosAluno {
             throw "O campo 'data do cadastro' deve ser numérico.";
         }
     }
+}
 
+class ValidarDadosResponsavel {
     //VALIDAÇÃO RESPONSÁVEL!!
 
     validateRequired(responsavel) {
@@ -127,7 +129,7 @@ class ValidarDadosAluno {
             throw "O campo rg é obrigatório."
         } else if (!responsavel.telefone) {
             throw "O campo telefone é obrigatório."
-        } else if (!Responsavel.endereco) {
+        } else if (!responsavel.endereco) {
             throw "O campo 'endereço' é obrigatório."
         }
     }
@@ -150,3 +152,17 @@ class ValidarDadosAluno {
         }
     }
 }
+
+
+console.log("Resultado validação de dados");
+
+const validate = new ValidarDadosAluno();
+const aluno = new Aluno(1, "Fulano de Tal", "20/10/2000", 1, 1, "01/03/2024", "25/03/2024")
+
+try {
+    validate.validateRequired(aluno)
+    console.log("Aluno validado com sucesso")
+} catch (err) {
+    console.log(err);
+}
+
