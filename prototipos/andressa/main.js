@@ -1,3 +1,18 @@
+console.log(
+   `
+    d888888o.   \`8.\`8888.      ,8' d888888o. 8888888 8888888888 8 8888888888            ,8.       ,8.          8 8888888888   8 888888888o.      
+   .\`8888:' \`88. \`8.\`8888.    ,8'.\`8888:' \`88.     8 8888       8 8888                 ,888.     ,888.         8 8888         8 8888    \`^888.   
+   8.\`8888.   Y8  \`8.\`8888.  ,8' 8.\`8888.   Y8     8 8888       8 8888                .\`8888.   .\`8888.        8 8888         8 8888        \`88. 
+   \`8.\`8888.       \`8.\`8888.,8'  \`8.\`8888.         8 8888       8 8888               ,8.\`8888. ,8.\`8888.       8 8888         8 8888         \`88 
+    \`8.\`8888.       \`8.\`88888'    \`8.\`8888.        8 8888       8 888888888888      ,8'8.\`8888,8^8.\`8888.      8 888888888888 8 8888          88 
+     \`8.\`8888.       \`8. 8888      \`8.\`8888.       8 8888       8 8888             ,8' \`8.\`8888' \`8.\`8888.     8 8888         8 8888          88 
+      \`8.\`8888.       \`8 8888       \`8.\`8888.      8 8888       8 8888            ,8'   \`8.\`88'   \`8.\`8888.    8 8888         8 8888         ,88 
+  8b   \`8.\`8888.       8 8888   8b   \`8.\`8888.     8 8888       8 8888           ,8'     \`8.\`'     \`8.\`8888.   8 8888         8 8888        ,88' 
+  \`8b.  ;8.\`8888       8 8888   \`8b.  ;8.\`8888     8 8888       8 8888          ,8'       \`8        \`8.\`8888.  8 8888         8 8888    ,o88P'   
+   \`Y8888P ,88P'       8 8888    \`Y8888P ,88P'     8 8888       8 888888888888 ,8'         \`         \`8.\`8888. 8 888888888888 8 888888888P'
+   `
+)
+
 class Medicamento {
     constructor(codigo, nomeComercial, nomeGenerico, categoria, lote, validade, preco, precoDesconto, dataCompra, codFornecedor, fonteCompra, dosagem, quantidade, descricao, codLaboratorio, tipoUso, dataInicio, previsaoTermino) {
         this.codigo = codigo;
@@ -27,6 +42,13 @@ class Medicamento {
         this.nome = nome;
     }
  }
+
+ class Categoria {
+   constructor(codigo, nome) {
+       this.codigo = codigo;
+       this.nome = nome;
+   }
+}
  
  class Fornecedor {
     constructor(codigo, nome, endereco, telefone, site) {
@@ -112,4 +134,50 @@ class Medicamento {
  } catch(err) {
    console.log(err);
  }
+
+
+ /*
+
+ Cadastrar os cumpons fiscais
+ Pesquisa de medicamentos
+ Relatorio mensal de medicamentos registrados
  
+ */
+
+ class Cadastro {
+   registrarMedicamento(medicamento) {
+      console.log(medicamento)
+   }
+ }
+
+
+ // preciso cadastrar o medicamento com os dados
+
+ const categoria = new Categoria(1, "soro fisiologico")
+ const fornecedor = new Fornecedor(1, "Drogasil", "Rua Barros Falcão, 324, Matatu, Salvador-BA", "", "www.drogasil.com.br")
+ const laboratorio = new Laboratorio(1, "Needs")
+ 
+ const medicamento = new Medicamento (77824, "Needs sol fisio", "", categoria.codigo, "33079000", "00/03/2028", 6.19, 0, "21/04/2024", fornecedor.codigo, "app", "", "1 un", "Solução fisiológica", laboratorio.codigo, "Externo", "", "")
+
+ const cadastro = new Cadastro()
+ cadastro.registrarMedicamento(medicamento)
+
+
+
+
+
+
+
+
+
+ class Pesquisa {
+   pesquisarMedicamento() {
+
+   }
+ }
+
+ class Relatorio {
+   emitirMensal() {
+
+   }
+ }

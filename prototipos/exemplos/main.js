@@ -226,7 +226,7 @@ try {
 
 class CampanhaVendas {
    vender() {
-
+      //
    }
 
 }
@@ -257,3 +257,13 @@ class Financeiro {
       // nao pagos tempo de atrasados
    }
 }
+
+/*
+Responsabilidades
+
+modelo - classes entidades
+Validadores dados
+Regras Negocio
+
+
+*/
