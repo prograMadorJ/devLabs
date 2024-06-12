@@ -1,0 +1,8 @@
+{
+    "java.dependency.packagePresentation": "flat",
+    "java.format.settings.url": ".vscode/java-formatter.xml",
+    "java.project.sourcePaths": [
+        "estudos-java\\src\\main\\java"
+    ],
+    "java.project.referencedLibraries": []
+}
