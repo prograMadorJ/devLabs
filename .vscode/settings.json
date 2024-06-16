@@ -5,7 +5,8 @@
         "estudos-java\\src\\main\\java"
     ],
     "java.project.referencedLibraries": [
-        "estudos-java/src/main/java/com/estudos/desafios/lib/unirest-java-1.4.9.jar",
-        "estudos-java/src/main/java/com/estudos/desafios/lib/json-20240303.jar"
+        "estudos-java/src/main/java/com/estudos/desafios/lib/json-20240303.jar",
+        "estudos-java/lib/json-20240303.jar",
+        "estudos-java/lib/unirest-java-core-4.4.0.jar"
     ]
 }

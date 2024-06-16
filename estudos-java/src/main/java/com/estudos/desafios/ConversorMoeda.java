@@ -1,8 +1,7 @@
 package com.estudos.desafios;
 
-import com.mashape.unirest.http.HttpResponse;
-import com.mashape.unirest.http.JsonNode;
-import com.mashape.unirest.http.Unirest;
+import kong.unirest.core.HttpResponse;
+import kong.unirest.core.Unirest;
 import org.json.JSONObject;
 
 public class ConversorMoeda implements ConversaoFinanceira {
@@ -26,14 +25,12 @@ public class ConversorMoeda implements ConversaoFinanceira {
         String url = "https://api.apilayer.com/exchangerates_data/latest";
         try {
 
-            HttpResponse<JsonNode> response = Unirest.get(url)
+            HttpResponse<String> response = Unirest.get(url)
                     .header("accept", "application/json")
                     .header("apiKey", "1twwZkAVmKJySlvcwd6O0d5T2Ay3gsIK")
                     .queryString("base", "USD")
                     .queryString("symbols", "BRL")
-                    // .field("parameter", "value")
-                    // .field("firstname", "Gary")
-                    .asJson();
+                    .asString();
 
             if (response.getStatus() == 200) {
                 JSONObject json = new JSONObject(response.getBody());
